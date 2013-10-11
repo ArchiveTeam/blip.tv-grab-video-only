@@ -91,7 +91,7 @@ if not WGET_LUA:
 #
 # Update this each time you make a non-cosmetic change.
 # It will be added to the WARC files and reported to the tracker.
-VERSION = "20131011.00"
+VERSION = "20131011.01"
 USER_AGENT = "Something"
 TRACKER_ID = 'bloopertv'
 TRACKER_HOST = 'tracker.archiveteam.org'
@@ -154,9 +154,9 @@ class MoveFiles(SimpleTask):
 project = Project(
     title="Blip.tv",
     project_html="""
-    <img class="project-logo" alt="" src="http://archiveteam.org/images/5/5f/Blip_web_logo.png" />
+    <img class="project-logo" alt="" src="http://archiveteam.org/images/5/5f/Blip_web_logo.png" height="50"/>
     <h2>Blip.tv <span class="links"><a href="http://blip.tv/">Website</a> &middot; <a href="http://%s/%s/">Leaderboard</a></span></h2>
-    <p><b>Blip.tv</b> TODO: Insert statement here</p>
+    <p>Archiving videos from <b>Blip.tv</b></p>
     """ % (TRACKER_HOST, TRACKER_ID)
     , utc_deadline=datetime.datetime(2013, 11, 07, 00, 00, 1)
 )
