@@ -91,7 +91,7 @@ if not WGET_LUA:
 #
 # Update this each time you make a non-cosmetic change.
 # It will be added to the WARC files and reported to the tracker.
-VERSION = "20131010.00"
+VERSION = "20131011.00"
 USER_AGENT = "Something"
 TRACKER_ID = 'bloopertv'
 TRACKER_HOST = 'tracker.archiveteam.org'
@@ -158,7 +158,7 @@ project = Project(
     <h2>Blip.tv <span class="links"><a href="http://blip.tv/">Website</a> &middot; <a href="http://%s/%s/">Leaderboard</a></span></h2>
     <p><b>Blip.tv</b> TODO: Insert statement here</p>
     """ % (TRACKER_HOST, TRACKER_ID)
-    , utc_deadline=datetime.datetime(2013, 10, 07, 00, 00, 1)
+    , utc_deadline=datetime.datetime(2013, 11, 07, 00, 00, 1)
 )
 
 pipeline = Pipeline(
